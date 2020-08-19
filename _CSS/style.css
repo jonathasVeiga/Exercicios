@@ -1,0 +1,29 @@
+Body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e0d7d7;
+}
+.tipos{
+    display: inline-block;
+    margin:10px 25px;
+}
+img{
+    width: 250px;
+    height: 230px;
+    border-radius: 100%;
+}
+
+img:hover{
+    box-shadow: 5px 5px 20px black;
+}
+#container{
+    position: relative;
+    margin: 10px auto;
+    width: 80%;
+    background-color: lightyellow;
+    
+}
+#menu{
+    text-align: center;
+}
