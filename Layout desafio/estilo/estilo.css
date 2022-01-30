@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+}
+
+span a{
+    font: 2em "arial";
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Menu */
+#menu{
+    display: flex;
+}
+
+#menu li{
+    margin-right: 30px;
+    list-style: none;
+}
+
+#menu a{
+    text-decoration: none;
+    color: #fff;
+    font: 1.2em "arial";
+}
+
+#menu li:hover a{
+    text-decoration:underline;
+}
