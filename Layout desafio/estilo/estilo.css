@@ -45,11 +45,15 @@ span a{
 
 section{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 3em;
     border: 1px solid red;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
 }
 
 #home h1{
@@ -70,4 +74,28 @@ section{
     width: 200px;
     height: 200px;
     background-color: #000;
+}
+
+/* SOBRE */
+
+#sobre figure img{
+    border: 10px solid transparent;
+    border-image: linear-gradient(315deg, #5de6de 0%, #b58ecc 74%);
+    border-image-slice:1;/*faz a borda envolver toda a imagem*/
+}
+
+#sobre #texto{
+    width: 30%;
+    padding-left:50px;
+}
+
+#texto h2{
+    font: 2.5em "arial";
+    font-weight: 700;
+    margin-bottom:1rem ;
+}
+
+#texto p{
+    font: 1.6em "arial";
+    line-height: 1.4em;
 }
