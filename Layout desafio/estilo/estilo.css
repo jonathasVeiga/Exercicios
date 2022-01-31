@@ -5,6 +5,11 @@
     scroll-behavior: smooth;
 }
 
+body{
+    width: 100%;
+    height: 100vh;
+}
+
 header{
     background-color: #212121;
     color: #fff;
@@ -54,6 +59,7 @@ section{
 #home{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #home h1{
@@ -211,4 +217,43 @@ footer{
     padding:2em;
     text-align: center;
     color: #fff;
+}
+
+/* Responssivo */
+@media screen and (max-width:1024px){
+    #container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:809px){
+    #container .produto{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width:642px){
+    #container .produto{
+        width: 130px;
+        height: 130px;
+    }
+
+}
+
+@media screen and (max-width:575px){
+    #container .produto{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width:564px){
+    #container .produto{
+        width:90%;
+        height: 220px;
+    }
+
 }
