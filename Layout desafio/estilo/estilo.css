@@ -46,6 +46,23 @@ span a{
     text-decoration:underline;
 }
 
+/* MENU HAMBURGUER */
+
+#hamburguer{
+    display: none;
+    width: 25px;
+}
+
+input[type="checkbox"]{
+    /* display: none; */
+}
+.traco{
+    height: 3px;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
 /* SEÇÃO HOME */
 
 section{
@@ -219,7 +236,44 @@ footer{
     color: #fff;
 }
 
-/* Responssivo */
+/* RESPONSIVO MENU */
+@media screen and (max-width:550px){
+    header{
+        justify-content:space-around;
+        
+    }
+    nav{
+        /* display: none; */
+        position: absolute;
+        top: 48px;
+        background-color: rgba(0, 0, 0, 0.801);
+        width: 100%;
+        height: 100%;
+    }
+
+    #menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    #menu li:not(#first){
+        margin-top: 20px;
+    }
+
+    #hamburguer{
+        display: block;
+    }
+
+    #checar:checked > .traco{
+        background-color: #f00000;
+    }
+}
+
+/* RESPONSIVO SEÇÃO HOME */
 @media screen and (max-width:1024px){
     #container{
         width: 90%;
@@ -254,6 +308,30 @@ footer{
     #container .produto{
         width:90%;
         height: 220px;
+    }
+
+}
+
+@media screen and (max-width:474px){
+    #home h1{
+        font: 2em "arial";
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width:398px){
+    #home h1{
+        font: 1.6em "arial";
+        font-weight: 700;
+    }
+
+}
+
+@media screen and (max-width:338px){
+    #home h1{
+        font: 1.5em "arial";
+        font-weight: 700;
     }
 
 }
