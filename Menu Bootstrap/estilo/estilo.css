@@ -39,6 +39,11 @@ body{
 }
 
 /* SUBMENU */
+
+.navbar .dropdown-menu{
+    left: -50px;
+}
+
 .dropdown-menu{
     background-color: rgba(0, 0, 0, 0.7);
 }
@@ -46,12 +51,6 @@ body{
 .dropdown-menu[data-bs-popper]{
     top:45px;
     border: none;
-    transition: top .3s;
-    /* top: 60px; */
-}
-
-.dropdown:hover .dropdown-menu[data-bs-popper]{
-    top: 45px;
 }
 
 .dropdown-item{
