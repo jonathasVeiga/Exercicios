@@ -11,6 +11,11 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+}
+
 .navbar-collapse{
     justify-content: flex-end;
 }
@@ -34,7 +39,6 @@ body{
 .nav-link:focus, 
 .navbar-light .navbar-nav 
 .nav-link:hover{
-    /* color:#fff; */
     color: #c0c0c0;
 }
 
@@ -74,9 +78,20 @@ body{
     box-shadow: none;
 }
 
-/* RESPONSSIVO */
+/* RESPONSIVO */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:767px){
+
+
+    .navbar-brand img{
+        width: 100px;
+        height: 25px;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
     .dropdown-menu{
         background-color: transparent;
     }
@@ -104,9 +119,5 @@ body{
 
     .navbar-collapse{
         overflow-y: auto;
-    }
-
-    .navbar-toggler{
-        /* transition:cubic-bezier(.5,.12,.54,.84)!important; */
     }
 }
