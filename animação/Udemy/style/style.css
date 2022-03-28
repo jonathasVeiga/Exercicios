@@ -27,6 +27,19 @@
     /* animation: anda 2s infinite alternate ease-in-out; */
 }
 
+#anima-time div:nth-child(3){
+    animation-name: anda;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;/*quantas vezes quero que aconteça?*/
+    animation-direction:alternate;/*impede de fazer a volta brusca*/
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;/*tempo que demora pra iniciar a animação*/
+
+     /* shorthand */
+    /* animation: anda 2s infinite 1s ease-in-out alternate; */
+
+}
+
 @keyframes anda{
     0%{
         transform: translateX(0);
