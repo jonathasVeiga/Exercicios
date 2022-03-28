@@ -1,10 +1,21 @@
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+}
+
 #anima-time div{
     width: 80px;
     height: 50px;
-    border: 3px solid red;
 }
 
 #anima-time div:nth-child(1){
+    border: 3px solid #007BFF;
+    
     /* animation: anda 2s infinite; */
     animation-name: anda;
     animation-duration: 2s;
@@ -17,6 +28,8 @@
 }
 
 #anima-time div:nth-child(2){
+    border: 3px solid #2DFF00;
+    
     animation-name: anda;
     animation-duration: 2s;
     animation-iteration-count:infinite;/*quantas vezes quero que aconteça?*/
@@ -28,6 +41,8 @@
 }
 
 #anima-time div:nth-child(3){
+    border: 3px solid #FF19C6;
+    
     animation-name: anda;
     animation-duration: 2s;
     animation-iteration-count:infinite;/*quantas vezes quero que aconteça?*/
